@@ -1,4 +1,5 @@
 python-dotenv
+git+https://github.com/m-bain/whisperx.git
 mangum
 fastapi
 pydantic_core
