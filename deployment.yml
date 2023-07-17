@@ -10,7 +10,7 @@ phases:
       - pip install -r requirements.txt -t lib
       - apt-get update
       - apt-get upgrade -y
-      - apt-get install -y ffmpeg
+      - apt-get install -y ffmpeg -t lib
   build:
     commands:
       - echo "Zipping deployment package..."
