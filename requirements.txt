@@ -1,4 +1,5 @@
 python-dotenv
 mangum
 fastapi
+pydantic_core
 uvicorn
