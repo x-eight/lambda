@@ -6,7 +6,11 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - pip install -r requirements.txt -t lib
-      - pip install "git+https://github.com/openai/whisper.git" -t lib
+      #- pip install "git+https://github.com/openai/whisper.git" -t lib
+      - pip install -r requirements.txt -t lib
+      - apt-get update
+      - apt-get upgrade -y
+      - apt-get install -y ffmpeg
   build:
     commands:
       - echo "Zipping deployment package..."
