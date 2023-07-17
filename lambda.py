@@ -1,16 +1,5 @@
-from mangum import Mangum
-from fastapi import FastAPI
-#from src import main
 
-app = FastAPI()
 
-@app.get("/")
-def read_root():
+def handler(event, context):
     return {"Hello": "World"}
-
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: str = None):
-    return {"item_id": item_id, "q": q}
-
-handler = Mangum(app)
 
