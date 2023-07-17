@@ -2,10 +2,12 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.9
+      python: 3.8
     commands:
       - echo "Installing dependencies..."
       - pip install -r requirements.txt -t lib
+      - pip install "git+https://github.com/openai/whisper.git"
+      - apt-get install -y ffmpeg
   build:
     commands:
       - echo "Zipping deployment package..."
