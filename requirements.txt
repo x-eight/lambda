@@ -1,1 +1,4 @@
-pandas==1.2.1
+python-dotenv
+mangum
+fastapi
+uvicorn
